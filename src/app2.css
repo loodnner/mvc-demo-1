@@ -1,0 +1,21 @@
+
+#app2>#tabBar>ol{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#app2>#tabBar>ol>li{
+    width: 25vw;
+    border: 1px solid red;
+}
+
+#app2>#tabContent>div{
+    display: none;
+}
+
+#app2>#tabContent>.active{
+display: block;
+}
+

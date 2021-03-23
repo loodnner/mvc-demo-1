@@ -1,0 +1,81 @@
+*{box-sizing: border-box;}
+*::before,*::after{box-sizing: border-box;}
+body{margin: 0;padding: 0; overflow: hidden;}
+ol,ul,li{
+    list-style: none;
+}
+/* 待检查reset是不是全面了 */
+#page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#page>section{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+
+#app2>#tabBar>ol{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#app2>#tabBar>ol>li{
+    width: 25vw;
+    border: 1px solid red;
+}
+
+#app2>#tabContent>div{
+    display: none;
+}
+
+#app2>#tabContent>.active{
+display: block;
+}
+
+
+#app3{
+    position: relative;
+}
+
+
+#app3>#square{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 100px;
+    left:30px;
+    border: 1px solid red;
+    transition: transform 1s;
+}
+#app3>#square.active{
+    transform: translateX(15vw);
+}
+
+#app4{
+    position: relative;
+}
+#app4>#circle{
+    position: absolute;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+@keyframes change{
+    0% {background-color:blue;}
+    50% {background-color:red;}
+    100% {background-color:yellow;}      
+}
+#app4>.selected{
+    animation: change 1s linear infinite alternate;
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
